@@ -9,7 +9,7 @@ The app uses IAM, Amplify, Cognito, Lambda, API Gateway and DynamoDB and with co
 
 ## Cost
 This architecture guarantees scalability, high availability, and minimal operational costs, fully aligned with the requirements of the “Serverless Track (lowest cost)”.
-All services used are part of the AWS Free Tier. While building the application may incur minor charges (typically under $1 USD) outside the Free Tier, costs may continue to accumulate if the app remains active. For instructions on how to remove all deployed resources, please refer to the Teardown section.
+All services used are part of the AWS Free Tier. While building the application may incur minor charges (typically under $1 USD) outside the Free Tier, costs may continue to accumulate if the app remains active. For instructions on how to remove all deployed resources, please refer to the Teardown section of report.
 
 ## The Application Code
 The application code is here in this repository.
@@ -128,4 +128,24 @@ Here is the code used to test the Lambda function:
     "body": "{\"PickupLocation\":{\"Latitude\":47.6174755835663,\"Longitude\":-122.28837066650185}}"
 }
 ```
+
+## Deployment
+Deployment Steps:
+4.1. Source Code Management – Repository hosted on GitHub
+4.2. Frontend – Deployed via AWS Amplify (connected to GitHub for automatic updates)
+4.3. Authentication – Configured Amazon Cognito User Pool (Region: eu-west-3)
+4.4. Backend Logic – Lambda function created with IAM role for DynamoDB write access
+4.5. Database – DynamoDB table “Rides2025” created
+4.6. API Gateway – REST API set up with /ride resource linked to Lambda
+4.7. Integration – Added Cognito Authorizer and enabled CORS
+4.8. Deployment URL: https://main.d2wfvvhaqsifhc.amplifyapp.com/ride.html
+
+For more details about each service, please refer to the report.
+
+Environment Separation:
+Development, testing, and production stages are managed through API Gateway and Amplify environments.
+Here, I’ve created only the Dev environment.
+
+
+
 
