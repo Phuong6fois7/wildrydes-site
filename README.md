@@ -9,7 +9,7 @@ The app uses IAM, Amplify, Cognito, Lambda, API Gateway and DynamoDB and with co
 
 ## Cost
 This architecture guarantees scalability, high availability, and minimal operational costs, fully aligned with the requirements of the “Serverless Track (lowest cost)”.
-All services used are part of the AWS Free Tier. While building the application may incur minor charges (typically under $1 USD) outside the Free Tier, costs may continue to accumulate if the app remains active. For instructions on how to remove all deployed resources, please refer to the Teardown section of report.
+All services used are part of the AWS Free Tier. While building the application may incur minor charges (typically around $2 USD) outside the Free Tier, costs may continue to accumulate if the app remains active. For instructions on how to remove all deployed resources, please refer to the Teardown section of report.
 
 ## The Application Code
 The application code is here in this repository.
