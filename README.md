@@ -132,21 +132,21 @@ Here is the code used to test the Lambda function:
 ## Deployment
 Deployment Steps:
 
-4.1. Source Code Management – Repository hosted on GitHub
+1. Source Code Management – Repository hosted on GitHub
 
-4.2. Frontend – Deployed via AWS Amplify (connected to GitHub for automatic updates)
+2. Frontend – Deployed via AWS Amplify (connected to GitHub for automatic updates)
 
-4.3. Authentication – Configured Amazon Cognito User Pool (Region: eu-west-3)
+3. Authentication – Configured Amazon Cognito User Pool (Region: eu-west-3)
 
-4.4. Backend Logic – Lambda function created with IAM role for DynamoDB write access
+4. Backend Logic – Lambda function created with IAM role for DynamoDB write access
 
-4.5. Database – DynamoDB table “Rides2025” created
+5. Database – DynamoDB table “Rides2025” created
 
-4.6. API Gateway – REST API set up with /ride resource linked to Lambda
+6. API Gateway – REST API set up with /ride resource linked to Lambda
 
-4.7. Integration – Added Cognito Authorizer and enabled CORS
+7. Integration – Added Cognito Authorizer and enabled CORS
 
-4.8. Deployment URL: https://main.d2wfvvhaqsifhc.amplifyapp.com/ride.html
+8. Deployment URL: https://main.d2wfvvhaqsifhc.amplifyapp.com/ride.html
 
 For more details about each service, please refer to the report.
 
